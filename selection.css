@@ -109,6 +109,16 @@
 .category-counts .fairly b { color: #8a61dc; }
 .category-counts .sometimes b { color: #637083; }
 .insight score.negative { color: #ef4444; }
+.history-panel { max-width: 1240px; margin: 0 auto; padding: 22px 30px 60px; }
+.history-head { display: flex; align-items: center; justify-content: space-between; }
+.history-head h2 { margin: 0 0 18px; font-size: 22px; }
+.history-clear { border: 0; background: transparent; color: #8992a3; cursor: pointer; }
+.history-list { display: grid; gap: 12px; }
+.history-item { padding: 17px 20px; background: #fff; border: 1px solid #e3e8f1; border-radius: 15px; box-shadow: 0 8px 25px rgba(31,54,100,.05); }
+.history-item time { display: block; margin-bottom: 9px; font-weight: 800; }
+.history-item div { display: flex; flex-wrap: wrap; gap: 12px; color: #596579; }
+.history-item .negative { color: #ef4444; }
+.history-empty { color: #8c95a5; text-align: center; padding: 24px; background: rgba(255,255,255,.6); border-radius: 15px; }
 
 /* 桌面工作台：左侧卡牌，右侧操作与结果。 */
 @media (min-width: 951px) {
@@ -208,6 +218,7 @@
     max-width: none;
     margin: 2px 0 0 -9%;
   }
+  .history-panel { grid-column: 2; grid-row: 5; width: auto; margin: 0 42px 40px; padding: 10px 0 30px; }
 }
 
 @media (max-width: 950px) {
@@ -216,6 +227,7 @@
     max-width: none;
     margin-left: -5%;
   }
+  .history-panel { padding: 15px 16px 45px; }
 }
 
 .card-number {
