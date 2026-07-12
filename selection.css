@@ -281,5 +281,5 @@
     filter: saturate(.72);
   }
 
-  .category-label { right: 2px; bottom: 2px; z-index: 3; padding: 4px 6px; font-size: 9px; border-width: 1px; }
+  .category-label { right: 2px; top: 2px; bottom: auto; z-index: 3; padding: 4px 6px; font-size: 9px; border-width: 1px; }
 }
