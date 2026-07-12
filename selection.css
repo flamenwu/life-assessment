@@ -237,12 +237,42 @@
   display: none;
 }
 
-@media (max-width: 680px) {
+@media (max-width: 950px) {
   .real-card-sheet {
-    gap: 0;
-    column-gap: 1.75%;
-    row-gap: 1.85%;
+    width: 100%;
+    aspect-ratio: auto;
+    padding: 6px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, auto);
+    gap: 8px;
+    background-image: none;
   }
 
-  .category-label { right: 2px; bottom: 2px; padding: 4px 7px; font-size: 10px; border-width: 1px; }
+  .real-card-sheet .life-card {
+    width: 100%;
+    aspect-ratio: 178 / 267;
+    border-radius: 7px;
+    background-color: transparent;
+    background-image: url("assets/life-cards.png");
+    background-repeat: no-repeat;
+    background-size: 675.85% 442.7%;
+    background-position: calc(var(--sprite-col) * 19.62%) calc(var(--sprite-row) * 31.7%);
+    box-shadow: 0 4px 10px rgba(23,32,51,.12);
+  }
+
+  .real-card-sheet .life-card.selected {
+    background-color: transparent;
+    background-image: url("assets/life-cards.png");
+  }
+
+  .real-card-sheet .life-card.selected::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    border-radius: 5px;
+    background: rgba(255,255,255,.58);
+  }
+
+  .category-label { right: 2px; bottom: 2px; z-index: 3; padding: 4px 6px; font-size: 9px; border-width: 1px; }
 }
