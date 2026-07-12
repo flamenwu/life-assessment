@@ -263,6 +263,7 @@
   .real-card-sheet .life-card.selected {
     background-color: transparent;
     background-image: url("assets/life-cards.png");
+    box-shadow: 0 4px 10px rgba(23,32,51,.12);
   }
 
   .real-card-sheet .life-card.selected::before {
@@ -271,7 +272,7 @@
     inset: 0;
     z-index: 2;
     border-radius: 5px;
-    background: rgba(255,255,255,.58);
+    background: rgba(255,255,255,.32);
   }
 
   .category-label { right: 2px; bottom: 2px; z-index: 3; padding: 4px 6px; font-size: 9px; border-width: 1px; }
